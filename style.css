@@ -846,6 +846,11 @@ body {
   .contact__me form textarea {
     height: 150px !important;
   }
+  .work__image,
+  .work__image__selectorshub {
+    width: 300px;
+    margin-right: 0;
+  }
 }
 
 @keyframes changeLanguage {
