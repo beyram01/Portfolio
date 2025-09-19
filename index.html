@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Beyram Jouini - Portfolio for Web Developer / Freelancer / Remote Worker"
+    />
+    <title>Beyram jouini</title>
+    <link rel="shortcut icon" type="image/png" href="./images/Logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Text+Me+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="home">
+      <nav class="side__nav">
+        <div class="logo">
+          <svg
+            viewBox="0 0 280 191"
+            fill="none"
+            id="small-logo"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo__primary__color"
+              d="M35.2134 9.42051C41.7829 15.8598 105.97 83.5195 105.97 83.5195C107.633 85.1315 108.957 87.0635 109.86 89.2002C110.764 91.337 111.23 93.6347 111.23 95.9562C111.23 98.2776 110.764 100.575 109.86 102.712C108.957 104.849 107.633 106.781 105.97 108.393C105.97 108.393 41.7829 176.084 35.2134 182.492C19.9876 197.781 16.567 189.14 9.57309 182.258C2.56346 175.409 -4.25079 171.797 3.30892 163.385L68.7213 95.9719C68.7213 95.9719 33.3216 57.8964 9.83093 34.2938C-4.28523 20.1104 2.8213 16.2859 9.83093 9.42051C16.8249 2.53932 20.3271 -5.16949 35.2134 9.42051Z"
+              fill="#00FB82"
+            />
+            <ellipse
+              class="logo__secondary__color"
+              cx="167.405"
+              cy="56.1764"
+              rx="56.1767"
+              ry="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="111.229"
+              width="39.3237"
+              height="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="150.555"
+              width="16.853"
+              height="14.6059"
+              fill="white"
+            />
+            <rect
+              class="logo__background__color"
+              x="144.938"
+              y="39.3237"
+              width="44.9414"
+              height="33.7058"
+              rx="16.8529"
+              fill="#000000"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="164.037"
+              y="78.647"
+              width="59.5473"
+              height="33.7058"
+              fill="#ffffff"
+            />
+            <ellipse
+              class="logo__secondary__color"
+              cx="223.583"
+              cy="134.823"
+              rx="56.1767"
+              ry="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__background__color"
+              x="99.9961"
+              y="112.353"
+              width="144.936"
+              height="45.5"
+              rx="22.4705"
+              fill="#000000"
+            />
+            <rect
+              class="logo__background__color"
+              x="101.117"
+              y="157.294"
+              width="116.848"
+              height="39.7058"
+              transform="translate(0 -5)"
+              fill="#000000"
+            />
+            <rect
+              id="cursor"
+              class="logo__primary__color"
+              x="111.229"
+              y="157.294"
+              width="85.6239"
+              height="33.7058"
+              rx="3"
+              fill="#00FB82"
+            />
+          </svg>
+        </div>
+        <div class="clickTriger"></div>
+        <div class="side__nav__projects">
+          <p id="nav-projects">Projects</p>
+          <div>
+            <svg
+              viewBox="0 0 12 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                id="arrow-top"
+                y="18.6411"
+                width="14.134"
+                height="1.92202"
+                transform="rotate(-45 0 18.6411)"
+                fill="white"
+              />
+              <rect
+                id="arrow-bottom"
+                x="9.99609"
+                y="11.3535"
+                width="14.1343"
+                height="1.92202"
+                transform="rotate(-135 9.99609 11.3535)"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="side__nav__socials">
+          <div id="github">
+            <a target="_blank" href="https://github.com/beyram01">
+              <svg
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M15 0C6.7125 0 0 6.88228 0 15.3794C0 22.1848 4.29375 27.9328 10.2563 29.9706C11.0063 30.1052 11.2875 29.6438 11.2875 29.2401C11.2875 28.8748 11.2688 27.6637 11.2688 26.3757C7.5 27.087 6.525 25.4337 6.225 24.5686C6.05625 24.1264 5.325 22.7615 4.6875 22.3963C4.1625 22.1079 3.4125 21.3966 4.66875 21.3774C5.85 21.3582 6.69375 22.4924 6.975 22.9538C8.325 25.2799 10.4812 24.6263 11.3438 24.2226C11.475 23.2229 11.8688 22.5501 12.3 22.1656C8.9625 21.7811 5.475 20.4546 5.475 14.572C5.475 12.8995 6.05625 11.5153 7.0125 10.4388C6.8625 10.0543 6.3375 8.4779 7.1625 6.36323C7.1625 6.36323 8.41875 5.95952 11.2875 7.93962C12.4875 7.59358 13.7625 7.42056 15.0375 7.42056C16.3125 7.42056 17.5875 7.59358 18.7875 7.93962C21.6562 5.9403 22.9125 6.36323 22.9125 6.36323C23.7375 8.4779 23.2125 10.0543 23.0625 10.4388C24.0188 11.5153 24.6 12.8803 24.6 14.572C24.6 20.4738 21.0938 21.7811 17.7563 22.1656C18.3 22.6462 18.7688 23.5689 18.7688 25.0108C18.7688 27.0678 18.75 28.721 18.75 29.2401C18.75 29.6438 19.0312 30.1244 19.7812 29.9706C22.759 28.9398 25.3465 26.9776 27.1796 24.3602C29.0127 21.7427 29.9991 18.6018 30 15.3794C30 6.88228 23.2875 0 15 0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="model__body">
+        <div class="projects__container">
+          <h3 id="model-title">Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <img src="./images/edu-tools.png" alt="" />
+              <div class="project__content">
+                <h4 class="project__title">Edu-tools</h4>
+                <p class="project__description">
+                  I created This website as a project for my class. I used
+                  Mongodb database, Reactjs Frontend Framework and Nodejs +
+                  Strapi (nodejs framework) in the backend.
+                </p>
+              </div>
+              <div class="project__call__to__action">
+                <div class="project__demo">
+                  <a target="_blank" href="https://edu-tools.netlify.app/">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.795 4.375C10.795 4.20924 10.7292 4.05027 10.6119 3.93306C10.4947 3.81585 10.3358 3.75 10.17 3.75H1.875C1.37772 3.75 0.900805 3.94754 0.549175 4.29917C0.197544 4.65081 0 5.12772 0 5.625L0 18.125C0 18.6223 0.197544 19.0992 0.549175 19.4508C0.900805 19.8025 1.37772 20 1.875 20H14.375C14.8723 20 15.3492 19.8025 15.7008 19.4508C16.0525 19.0992 16.25 18.6223 16.25 18.125V9.83C16.25 9.66424 16.1842 9.50527 16.0669 9.38806C15.9497 9.27085 15.7908 9.205 15.625 9.205C15.4592 9.205 15.3003 9.27085 15.1831 9.38806C15.0658 9.50527 15 9.66424 15 9.83V18.125C15 18.2908 14.9342 18.4497 14.8169 18.5669C14.6997 18.6842 14.5408 18.75 14.375 18.75H1.875C1.70924 18.75 1.55027 18.6842 1.43306 18.5669C1.31585 18.4497 1.25 18.2908 1.25 18.125V5.625C1.25 5.45924 1.31585 5.30027 1.43306 5.18306C1.55027 5.06585 1.70924 5 1.875 5H10.17C10.3358 5 10.4947 4.93415 10.6119 4.81694C10.7292 4.69973 10.795 4.54076 10.795 4.375Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.0008 0.625C20.0008 0.45924 19.9349 0.300269 19.8177 0.183058C19.7005 0.065848 19.5415 0 19.3758 0L13.1258 0C12.96 0 12.8011 0.065848 12.6838 0.183058C12.5666 0.300269 12.5008 0.45924 12.5008 0.625C12.5008 0.79076 12.5666 0.949732 12.6838 1.06694C12.8011 1.18415 12.96 1.25 13.1258 1.25H17.867L7.68329 11.4325C7.62518 11.4906 7.57908 11.5596 7.54764 11.6355C7.51619 11.7114 7.5 11.7928 7.5 11.875C7.5 11.9572 7.51619 12.0386 7.54764 12.1145C7.57908 12.1904 7.62518 12.2594 7.68329 12.3175C7.7414 12.3756 7.81039 12.4217 7.88631 12.4532C7.96223 12.4846 8.04361 12.5008 8.12579 12.5008C8.20797 12.5008 8.28935 12.4846 8.36527 12.4532C8.44119 12.4217 8.51018 12.3756 8.56829 12.3175L18.7508 2.13375V6.875C18.7508 7.04076 18.8166 7.19973 18.9338 7.31694C19.0511 7.43415 19.21 7.5 19.3758 7.5C19.5415 7.5 19.7005 7.43415 19.8177 7.31694C19.9349 7.19973 20.0008 7.04076 20.0008 6.875V0.625Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="project__github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/beyram01/edu-tools-frontend"
+                  >
+                    <svg
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M15 0C6.7125 0 0 6.88228 0 15.3794C0 22.1848 4.29375 27.9328 10.2563 29.9706C11.0063 30.1052 11.2875 29.6438 11.2875 29.2401C11.2875 28.8748 11.2688 27.6637 11.2688 26.3757C7.5 27.087 6.525 25.4337 6.225 24.5686C6.05625 24.1264 5.325 22.7615 4.6875 22.3963C4.1625 22.1079 3.4125 21.3966 4.66875 21.3774C5.85 21.3582 6.69375 22.4924 6.975 22.9538C8.325 25.2799 10.4812 24.6263 11.3438 24.2226C11.475 23.2229 11.8688 22.5501 12.3 22.1656C8.9625 21.7811 5.475 20.4546 5.475 14.572C5.475 12.8995 6.05625 11.5153 7.0125 10.4388C6.8625 10.0543 6.3375 8.4779 7.1625 6.36323C7.1625 6.36323 8.41875 5.95952 11.2875 7.93962C12.4875 7.59358 13.7625 7.42056 15.0375 7.42056C16.3125 7.42056 17.5875 7.59358 18.7875 7.93962C21.6562 5.9403 22.9125 6.36323 22.9125 6.36323C23.7375 8.4779 23.2125 10.0543 23.0625 10.4388C24.0188 11.5153 24.6 12.8803 24.6 14.572C24.6 20.4738 21.0938 21.7811 17.7563 22.1656C18.3 22.6462 18.7688 23.5689 18.7688 25.0108C18.7688 27.0678 18.75 28.721 18.75 29.2401C18.75 29.6438 19.0312 30.1244 19.7812 29.9706C22.759 28.9398 25.3465 26.9776 27.1796 24.3602C29.0127 21.7427 29.9991 18.6018 30 15.3794C30 6.88228 23.2875 0 15 0Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./images/NRG_Esports.png" alt="NRG_Esports" />
+              <div class="project__content">
+                <h4 class="project__title">NRG Esports Website</h4>
+                <p class="project__description">
+                  An esports team landing page created with Reactjs.
+                </p>
+              </div>
+              <div class="project__call__to__action">
+                <div class="project__demo">
+                  <a target="_blank" href="https://nrg-esports.netlify.app/">
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.795 4.375C10.795 4.20924 10.7292 4.05027 10.6119 3.93306C10.4947 3.81585 10.3358 3.75 10.17 3.75H1.875C1.37772 3.75 0.900805 3.94754 0.549175 4.29917C0.197544 4.65081 0 5.12772 0 5.625L0 18.125C0 18.6223 0.197544 19.0992 0.549175 19.4508C0.900805 19.8025 1.37772 20 1.875 20H14.375C14.8723 20 15.3492 19.8025 15.7008 19.4508C16.0525 19.0992 16.25 18.6223 16.25 18.125V9.83C16.25 9.66424 16.1842 9.50527 16.0669 9.38806C15.9497 9.27085 15.7908 9.205 15.625 9.205C15.4592 9.205 15.3003 9.27085 15.1831 9.38806C15.0658 9.50527 15 9.66424 15 9.83V18.125C15 18.2908 14.9342 18.4497 14.8169 18.5669C14.6997 18.6842 14.5408 18.75 14.375 18.75H1.875C1.70924 18.75 1.55027 18.6842 1.43306 18.5669C1.31585 18.4497 1.25 18.2908 1.25 18.125V5.625C1.25 5.45924 1.31585 5.30027 1.43306 5.18306C1.55027 5.06585 1.70924 5 1.875 5H10.17C10.3358 5 10.4947 4.93415 10.6119 4.81694C10.7292 4.69973 10.795 4.54076 10.795 4.375Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.0008 0.625C20.0008 0.45924 19.9349 0.300269 19.8177 0.183058C19.7005 0.065848 19.5415 0 19.3758 0L13.1258 0C12.96 0 12.8011 0.065848 12.6838 0.183058C12.5666 0.300269 12.5008 0.45924 12.5008 0.625C12.5008 0.79076 12.5666 0.949732 12.6838 1.06694C12.8011 1.18415 12.96 1.25 13.1258 1.25H17.867L7.68329 11.4325C7.62518 11.4906 7.57908 11.5596 7.54764 11.6355C7.51619 11.7114 7.5 11.7928 7.5 11.875C7.5 11.9572 7.51619 12.0386 7.54764 12.1145C7.57908 12.1904 7.62518 12.2594 7.68329 12.3175C7.7414 12.3756 7.81039 12.4217 7.88631 12.4532C7.96223 12.4846 8.04361 12.5008 8.12579 12.5008C8.20797 12.5008 8.28935 12.4846 8.36527 12.4532C8.44119 12.4217 8.51018 12.3756 8.56829 12.3175L18.7508 2.13375V6.875C18.7508 7.04076 18.8166 7.19973 18.9338 7.31694C19.0511 7.43415 19.21 7.5 19.3758 7.5C19.5415 7.5 19.7005 7.43415 19.8177 7.31694C19.9349 7.19973 20.0008 7.04076 20.0008 6.875V0.625Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="project__github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/beyram01/Esport-Team-Website"
+                  >
+                    <svg
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M15 0C6.7125 0 0 6.88228 0 15.3794C0 22.1848 4.29375 27.9328 10.2563 29.9706C11.0063 30.1052 11.2875 29.6438 11.2875 29.2401C11.2875 28.8748 11.2688 27.6637 11.2688 26.3757C7.5 27.087 6.525 25.4337 6.225 24.5686C6.05625 24.1264 5.325 22.7615 4.6875 22.3963C4.1625 22.1079 3.4125 21.3966 4.66875 21.3774C5.85 21.3582 6.69375 22.4924 6.975 22.9538C8.325 25.2799 10.4812 24.6263 11.3438 24.2226C11.475 23.2229 11.8688 22.5501 12.3 22.1656C8.9625 21.7811 5.475 20.4546 5.475 14.572C5.475 12.8995 6.05625 11.5153 7.0125 10.4388C6.8625 10.0543 6.3375 8.4779 7.1625 6.36323C7.1625 6.36323 8.41875 5.95952 11.2875 7.93962C12.4875 7.59358 13.7625 7.42056 15.0375 7.42056C16.3125 7.42056 17.5875 7.59358 18.7875 7.93962C21.6562 5.9403 22.9125 6.36323 22.9125 6.36323C23.7375 8.4779 23.2125 10.0543 23.0625 10.4388C24.0188 11.5153 24.6 12.8803 24.6 14.572C24.6 20.4738 21.0938 21.7811 17.7563 22.1656C18.3 22.6462 18.7688 23.5689 18.7688 25.0108C18.7688 27.0678 18.75 28.721 18.75 29.2401C18.75 29.6438 19.0312 30.1244 19.7812 29.9706C22.759 28.9398 25.3465 26.9776 27.1796 24.3602C29.0127 21.7427 29.9991 18.6018 30 15.3794C30 6.88228 23.2875 0 15 0Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="./images/Fast-YTD.png"
+                alt="Fast-YTD Chrome Extension"
+              />
+              <div class="project__content">
+                <h4 class="project__title">
+                  Youtube Videos Downloader (Chrome Extension)
+                </h4>
+                <p class="project__description">
+                  This is a Chrome extension for fast youtube videos downloads.
+                  Press a Button and Boom you can download the video on 4
+                  formats (mp3, webm, mp4, mkv).
+                </p>
+              </div>
+              <div class="project__call__to__action">
+                <div class="project__github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/beyram01/Fast-YTD"
+                  >
+                    <svg
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M15 0C6.7125 0 0 6.88228 0 15.3794C0 22.1848 4.29375 27.9328 10.2563 29.9706C11.0063 30.1052 11.2875 29.6438 11.2875 29.2401C11.2875 28.8748 11.2688 27.6637 11.2688 26.3757C7.5 27.087 6.525 25.4337 6.225 24.5686C6.05625 24.1264 5.325 22.7615 4.6875 22.3963C4.1625 22.1079 3.4125 21.3966 4.66875 21.3774C5.85 21.3582 6.69375 22.4924 6.975 22.9538C8.325 25.2799 10.4812 24.6263 11.3438 24.2226C11.475 23.2229 11.8688 22.5501 12.3 22.1656C8.9625 21.7811 5.475 20.4546 5.475 14.572C5.475 12.8995 6.05625 11.5153 7.0125 10.4388C6.8625 10.0543 6.3375 8.4779 7.1625 6.36323C7.1625 6.36323 8.41875 5.95952 11.2875 7.93962C12.4875 7.59358 13.7625 7.42056 15.0375 7.42056C16.3125 7.42056 17.5875 7.59358 18.7875 7.93962C21.6562 5.9403 22.9125 6.36323 22.9125 6.36323C23.7375 8.4779 23.2125 10.0543 23.0625 10.4388C24.0188 11.5153 24.6 12.8803 24.6 14.572C24.6 20.4738 21.0938 21.7811 17.7563 22.1656C18.3 22.6462 18.7688 23.5689 18.7688 25.0108C18.7688 27.0678 18.75 28.721 18.75 29.2401C18.75 29.6438 19.0312 30.1244 19.7812 29.9706C22.759 28.9398 25.3465 26.9776 27.1796 24.3602C29.0127 21.7427 29.9991 18.6018 30 15.3794C30 6.88228 23.2875 0 15 0Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="home__body">
+        <div id="progress-bar"></div>
+        <div class="logo">
+          <svg
+            viewBox="0 0 280 191"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo__primary__color"
+              d="M35.2134 9.42051C41.7829 15.8598 105.97 83.5195 105.97 83.5195C107.633 85.1315 108.957 87.0635 109.86 89.2002C110.764 91.337 111.23 93.6347 111.23 95.9562C111.23 98.2776 110.764 100.575 109.86 102.712C108.957 104.849 107.633 106.781 105.97 108.393C105.97 108.393 41.7829 176.084 35.2134 182.492C19.9876 197.781 16.567 189.14 9.57309 182.258C2.56346 175.409 -4.25079 171.797 3.30892 163.385L68.7213 95.9719C68.7213 95.9719 33.3216 57.8964 9.83093 34.2938C-4.28523 20.1104 2.8213 16.2859 9.83093 9.42051C16.8249 2.53932 20.3271 -5.16949 35.2134 9.42051Z"
+              fill="#00FB82"
+            />
+            <ellipse
+              class="logo__secondary__color"
+              cx="167.405"
+              cy="56.1764"
+              rx="56.1767"
+              ry="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="111.229"
+              width="39.3237"
+              height="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="150.555"
+              width="16.853"
+              height="14.6059"
+              fill="white"
+            />
+            <rect
+              class="logo__background__color"
+              x="144.938"
+              y="39.3237"
+              width="44.9414"
+              height="33.7058"
+              rx="16.8529"
+              fill="#000000"
+            />
+            <rect
+              class="logo__secondary__color"
+              x="164.037"
+              y="78.647"
+              width="59.5473"
+              height="33.7058"
+              fill="#ffffff"
+            />
+            <ellipse
+              class="logo__secondary__color"
+              cx="223.583"
+              cy="134.823"
+              rx="56.1767"
+              ry="56.1764"
+              fill="#ffffff"
+            />
+            <rect
+              class="logo__background__color"
+              x="99.9961"
+              y="112.353"
+              width="144.936"
+              height="45.5"
+              rx="22.4705"
+              fill="#000000"
+            />
+            <rect
+              class="logo__background__color"
+              x="101.117"
+              y="157.294"
+              width="116.848"
+              height="39.7058"
+              translate="0 -2"
+              fill="#000000"
+            />
+            <rect
+              id="cursor"
+              class="logo__primary__color"
+              x="111.229"
+              y="157.294"
+              width="85.6239"
+              height="33.7058"
+              rx="3"
+              fill="#00FB82"
+            />
+          </svg>
+        </div>
+        <div>
+          <h2>
+            Hello I am
+            <span class="animator"></span>
+            <span class="animator"></span>
+            <span class="animator"></span>
+          </h2>
+          <h1>BEYRAM JOUINI</h1>
+          <p>Web developer / Freelancer / Remote Worker</p>
+          <a href="CV_Beyram_Jouini.pdf" download>Download Resumé</a>
+        </div>
+        <section class="about__me">
+          <h3 class="animatedSectionTitle">About Me</h3>
+          <div class="about__me__content">
+            <p>
+              I am Beyram Jouini, i am a tunisian web developer / freelancer /
+              remote worker. This is
+              <a href="CV_Beyram_Jouini.pdf" download>
+                my Resumé
+                <span id="orange"></span>
+              </a>
+              to check out the technologies that i work with and you can always
+              check my projects too. If you like my work
+              <a href="#contact">
+                Contact Me
+                <span id="pink"></span>
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+        <section class="Professional Experience">
+          <h3 class="animatedSectionTitle">Professional Experience</h3>
+          <div class="work__container">
+            <div class="work__block">
+              <a href="https://www.betoullagrandepalette.tn/" target="_blank"
+                >Betoul La Grande Palette
+                <span id="pinkk"></span>
+              </a>
+              <div class="information">
+                <img
+                  class="work__image"
+                  src="images/betoullagrandepalette.png"
+                  alt="betoullagrandepalette"
+                />
+                <p>
+                  I designed and developed a full-stack website for Betoul La
+                  Grande Palette, a Tunisian company that manufactures and
+                  markets wooden pallets. Leveraging Next.js for the frontend
+                  and backend, alongside MySQL for structured data management, I
+                  built a scalable and responsive platform optimized for
+                  performance and SEO. The solution included a user-friendly
+                  interface, an admin dashboard for content management
+                </p>
+              </div>
+            </div>
+            <div class="work__block">
+              <a
+                href="https://www.upwork.com/freelancers/~0113adb50cbb69411e"
+                target="_blank"
+                >Freelancing On Upwork
+                <span id="green"></span>
+              </a>
+              <div class="information">
+                <img class="work__image" src="images/upwork.png" alt="upwork" />
+                <p>
+                  Upwork is a global freelancing platform where businesses and
+                  independent professionals connect and collaborate remotely. As
+                  a web developer, I have successfully completed numerous
+                  projects on Upwork, ranging from website development to
+                  application design. My expertise includes front-end and
+                  back-end development, ensuring high-quality deliverables that
+                  meet client requirements. I am committed to providing
+                  exceptional service and building long-term relationships with
+                  clients on the platform.
+
+                  <a
+                    class="reviews"
+                    href="https://www.upwork.com/freelancers/~0113adb50cbb69411e"
+                    target="_blank"
+                    >Clients Reviews
+                    <span id="white"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="work__block">
+              <a href="https://selectorshub.com/" target="_blank"
+                >Selectorshub
+                <span id="orangee"></span>
+              </a>
+              <div class="information">
+                <div class="work__image__selectorshub">
+                  <img
+                    class="work__image selectorshub"
+                    src="images/selectorshub.png"
+                    alt="Selectorshub"
+                  />
+                </div>
+                <p>
+                  At SelectorsHub, I was responsible for maintaining and
+                  enhancing existing browser extensions while also developing
+                  new features and products. I built an API to efficiently
+                  manage and serve advertisements in free extensions, helping
+                  optimize monetization. My work involved end-to-end development
+                  using HTML, CSS, JavaScript, Node.js, and MySQL, ensuring
+                  scalable and reliable solutions that improved the overall
+                  developer experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact__me">
+          <h3 class="animatedSectionTitle">Get In Touch</h3>
+          <div class="contact__info">
+            <p>
+              I am currently available for new projects and opportunities. If
+              you have any questions or would like to discuss a potential
+              collaboration, please feel free to reach out to me via email or
+              phone. I look forward to hearing from you!
+            </p>
+            <div class="info">
+              <div class="info__block">
+                <h4>Email</h4>
+                <p>beyramjouini7@gmail.com</p>
+              </div>
+              <div class="info__block">
+                <h4>Phone Number</h4>
+                <p>+216 58 226 285</p>
+              </div>
+          </div>
+          <!-- <form>
+            <div class="form__controller">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="form__controller">
+              <label htmlFor="email">Email Address</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="form__controller">
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="I am lisening..."
+              ></textarea>
+            </div>
+            <button type="submit">
+              Send
+              <svg
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.29988 5.40714L18.711 7.41005C18.8868 7.43032 19.0532 7.49989 19.1911 7.61074C19.329 7.72158 19.4328 7.86918 19.4904 8.03648C19.548 8.20377 19.5571 8.38396 19.5167 8.55621C19.4762 8.72847 19.3879 8.88577 19.2619 9.00996L6.77486 21.3076C6.64685 21.4339 6.48524 21.5207 6.30929 21.5577C6.13333 21.5948 5.95044 21.5804 5.7824 21.5165C5.61435 21.4525 5.46824 21.3415 5.36147 21.1969C5.25469 21.0522 5.19175 20.8799 5.18014 20.7004L4.68597 13.1344L0.416805 6.86671C0.315877 6.71813 0.259729 6.5437 0.255037 6.36415C0.250344 6.1846 0.297303 6.00747 0.390333 5.85383C0.483363 5.70018 0.618551 5.57648 0.77983 5.49742C0.941109 5.41836 1.1217 5.38727 1.30013 5.40785L1.29988 5.40714ZM1.57835 6.5731L5.46854 12.2864L13.2318 9.61333C13.3606 9.56903 13.5012 9.57296 13.6273 9.62439C13.7534 9.67582 13.8566 9.77125 13.9178 9.89299L13.9472 9.96223C13.9917 10.0909 13.988 10.2313 13.9369 10.3575C13.8858 10.4836 13.7907 10.587 13.6692 10.6484L13.5985 10.6783L5.82647 13.3536L6.27741 20.2179L18.1931 8.48278L1.5781 6.57239L1.57835 6.5731Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form> -->
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
